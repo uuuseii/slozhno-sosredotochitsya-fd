@@ -125,6 +125,11 @@
   margin: calc(var(--content-gap) - var(--page-offset)) 0;
 }
 
+.card__container {
+  display: grid;
+  gap: 20px;
+}
+
 .card__title {
   margin-bottom: 20px;
   color: var(--secondary-accent-color, #ff0070);
@@ -259,9 +264,7 @@
 
 @media (width >= 1024px) {
   .card__container {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
   }
 
   .header__theme-menu-list {
