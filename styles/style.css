@@ -1,5 +1,4 @@
 .page {
-  padding: 0 var(--page-offset);
   font-family: var(--main-font, sans-serif);
   font-size: var(--main-font-size, 18px);
   line-height: var(--main-line-height);
@@ -42,6 +41,7 @@
 
 .decorated-zone {
   position: relative;
+  margin: 0 var(--page-offset);
 }
 
 .decorated-zone::before,
@@ -122,7 +122,7 @@
   display: flex;
   flex-direction: column;
   gap: var(--content-gap, 50px);
-  margin: calc(var(--content-gap) - var(--page-offset)) 0;
+  margin: calc(var(--content-gap) - var(--page-offset)) var(--page-offset);
 }
 
 .card__container {
