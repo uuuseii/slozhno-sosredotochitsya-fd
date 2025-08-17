@@ -1,12 +1,18 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root.theme-dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --bg-image: url("../images/cover-image-dark.png");
+  --bg-color: #000028;
+  --accent-color: #ff0070;
+  --secondary-accent-color: var(--accent-color);
+  --menu-button-hover-color: rgba(255, 0, 112, 0.4);
+  --page-title-color: #db00ff;
+  --card-subtitle-color: #000028;
+  --card-description-text-color: #f1b2ce;
+}
+
+:root.theme-dark .header__theme-menu-button:hover {
+  box-shadow: none;
+}
+
+:root.theme-dark .rec-indicator {
+  display: inline-flex;
 }
