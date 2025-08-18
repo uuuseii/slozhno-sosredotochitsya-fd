@@ -27,6 +27,7 @@
   gap: 10px;
   color: var(--accent-color, #ff0070);
   line-height: 25px;
+  text-transform: uppercase;
 }
 
 .rec-indicator::after {
@@ -55,15 +56,15 @@
 .decorated-zone::before {
   top: var(--page-offset, 10px);
   right: 0;
-  border-inline-end: 1px solid var(--secondary-accent-color, #ff0070);
-  border-block-start: 1px solid var(--secondary-accent-color, #ff0070);
+  border-inline-end: 1px solid var(--complementary-color, #ff0070);
+  border-block-start: 1px solid var(--complementary-color, #ff0070);
 }
 
 .decorated-zone::after {
   bottom: var(--page-offset, 10px);
   left: 0;
-  border-inline-start: 1px solid var(--secondary-accent-color, #ff0070);
-  border-block-end: 1px solid var(--secondary-accent-color, #ff0070);
+  border-inline-start: 1px solid var(--complementary-color, #ff0070);
+  border-block-end: 1px solid var(--complementary-color, #ff0070);
 }
 
 .header__theme-menu {
@@ -98,13 +99,13 @@
 .header__theme-menu-button {
   border: none;
   padding: 1px 13px;
-  color: var(--secondary-accent-color, #ff0070);
+  color: var(--complementary-color, #ff0070);
   text-transform: lowercase;
   background: inherit;
 }
 
 .header__theme-menu-button_active {
-  outline: 1px solid var(--secondary-accent-color, #ff0070);
+  outline: 1px solid var(--complementary-color, #ff0070);
   pointer-events: none;
 }
 
@@ -114,7 +115,7 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-block-end: 1px solid var(--secondary-accent-color, #ff0070);
+  border-block-end: 1px solid var(--complementary-color, #ff0070);
   outline: none;
 }
 
@@ -126,13 +127,14 @@
 }
 
 .card__container {
-  display: grid;
+  display: flex;
   gap: 20px;
+  flex-direction: column;
 }
 
 .card__title {
   margin-bottom: 20px;
-  color: var(--secondary-accent-color, #ff0070);
+  color: var(--complementary-color, #ff0070);
   font-weight: var(--font-weight-bold, 700);
 }
 
@@ -264,7 +266,7 @@
 
 @media (width >= 1024px) {
   .card__container {
-    grid-template-columns: repeat(3, 1fr);
+    flex-direction: row;
   }
 
   .header__theme-menu-list {
