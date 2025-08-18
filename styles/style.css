@@ -225,6 +225,10 @@
     gap: 20px;
   }
 
+  .card__container div {
+    flex: 1;
+  }
+
   .card:nth-child(even) .card__title {
     max-inline-size: var(--content-left-column-width);
   }
